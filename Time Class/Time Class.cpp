@@ -7,16 +7,17 @@ class Time
     public:
         Time
         (
-            std::chrono::milliseconds milliseconds,
-            std::chrono::seconds seconds,
-            std::chrono::minutes minutes,
-            std::chrono::hours hours,
-            std::chrono::days days,
+            std::chrono::years years,
             std::chrono::months months,
-            std::chrono::years years
-        ) : mMilliseconds(milliseconds), mSeconds(seconds), mMinutes(minutes), mHours(hours),
-            mDays(days), mMonths(months), mYears(years)
+            std::chrono::days days,
+            std::chrono::hours hours,
+            std::chrono::minutes minutes,
+            std::chrono::seconds seconds,
+            std::chrono::milliseconds milliseconds
+        ) : mYears(years), mMonths(months), mDays(days), mHours(hours),
+            mMinutes(minutes), mSeconds(seconds), mMilliseconds(milliseconds)
         {}
+
 
 
 
